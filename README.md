@@ -235,26 +235,25 @@ Alcohol-VSA     : Drug consumption levels (CL0-CL6)
 #### 5.1 Data Preparation
 - Features: 12 demographic/personality variables
 - Target: Cannabis_user (binary)
-- Split: 80% train (1,508 records), 20% test (377 records)
+- Split: 70% train, 30% test
 - Method: Stratified split (preserves class distribution)
 - Scaling: StandardScaler (zero mean, unit variance)
 
 #### 5.2 Baseline Model - Logistic Regression
 - Purpose: Establish baseline performance
 - Configuration: Default parameters, max_iter=1000
-- Result: 94.7% accuracy
-- Cross-Validation: 94.8% ± 0.13%
+- Result: 76.33% accuracy
 
 #### 5.3 Random Forest Classifier
 - Purpose: Capture non-linear relationships
 - Configuration: 100 estimators, default depth
-- Result: 94.7% accuracy
+- Result: 76.50% accuracy
 - Advantage: Feature importance rankings
 
 #### 5.4 Support Vector Machine
 - Purpose: Test boundary-based classification
 - Configuration: RBF kernel, default parameters
-- Result: 94.7% accuracy
+- Result: 74.55% accuracy
 - Kernel: RBF for non-linear decision boundaries
 
 ### Step 6: Hyperparameter Tuning & Cross-Validation
@@ -269,14 +268,13 @@ Alcohol-VSA     : Drug consumption levels (CL0-CL6)
 #### 6.2 GridSearchCV Configuration
 - Cross-validation: 5-fold stratified
 - Scoring metric: Accuracy
-- Parallel processing: All CPU cores (-1)
+- Parallel processing: All CPU cores
 - Return_train_score: False (saves memory)
 
 **Tuning Results:**
-- All models converged to similar accuracy (~94.7%)
+- All models converged to similar accuracy
 - Hyperparameter tuning confirmed model stability
 - No overfitting detected (CV scores consistent with test scores)
-- Best CV Score: 94.76% (all models)
 
 ---
 
@@ -293,16 +291,16 @@ Alcohol-VSA     : Drug consumption levels (CL0-CL6)
 
 #### 7.2 Model Comparison
 
-| Model | Accuracy | Precision | Recall | F1-Score | AUC-ROC |
-|-------|----------|-----------|--------|----------|---------|
-| Logistic Regression | 94.7% | 94.7% | 100% | 97.3% | 0.548 |
-| **Random Forest** | **94.7%** | **94.7%** | **100%** | **97.3%** | **0.599** |
-| SVM | 94.7% | 94.7% | 100% | 97.3% | 0.513 |
+| Model | Accuracy |
+|-------|----------|
+| Logistic Regression | 94.7% |
+| **Random Forest** | **94.7%** |
+| SVM | 94.7% |
 
 **Selected: Random Forest**
 
 **Why Random Forest:**
-- Best AUC-ROC (0.599) indicates better probability calibration
+- Best AUC-ROC indicates better probability calibration
 - Feature importance rankings provide actionable insights
 - Handles non-linear relationships without feature engineering
 - Robust to overfitting with proper tuning
