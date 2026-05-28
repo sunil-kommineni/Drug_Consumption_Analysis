@@ -294,7 +294,7 @@ Alcohol-VSA     : Drug consumption levels (CL0-CL6)
 | Model | Accuracy |
 |-------|----------|
 | Logistic Regression | 77.18% |
-| **Random Forest** | **78.65** |
+| **Random Forest** | **78.65%** |
 | SVM | 77.18% |
 
 **Selected: Random Forest**
