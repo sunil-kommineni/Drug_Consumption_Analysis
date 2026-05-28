@@ -22,11 +22,6 @@ This project analyzes drug consumption patterns across **1,885 subjects** from t
 | **Dataset Size** | 1,885 records × 32 features |
 | **Models Trained** | Logistic Regression, Random Forest, SVM |
 | **Best Accuracy** | **94.7%** (Random Forest) |
-| **Cross-Validation** | 5-fold stratified, 94.8% mean |
-| **Top Predictors** | Agreeableness, Conscientiousness, Sensation Seeking |
-| **Risk Segmentation** | 66.4% High risk, 31.8% Severe risk |
-| **Visualizations** | 17+ charts across 3 EDA panels |
-| **Data Quality Improvement** | 45% via automated pipeline |
 
 ---
 
