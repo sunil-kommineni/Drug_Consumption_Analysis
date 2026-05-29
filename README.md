@@ -1,4 +1,4 @@
-# Drug_Consumption_Analysis
+# Drug Consumption Analysis
 
 [![Python](https://img.shields.io/badge/Python-3.9-blue.svg)](https://python.org)
 [![PowerBI](https://img.shields.io/badge/PowerBI-Dashboard-yellow.svg)](https://powerbi.microsoft.com)
