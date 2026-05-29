@@ -124,8 +124,6 @@ Alcohol-VSA     : Drug consumption levels (CL0-CL6)
 - **0 (Non-user):** CL0 - Never used (99 records, 5.3%)
 - **1 (User):** CL1-CL6 - Any usage history (1,786 records, 94.7%)
 
-**Secondary Targets:** Coke, Ecstasy, Heroin, Meth, Nicotine (for multi-drug analysis)
-
 ---
 
 ## 3. Project Process & Workflow
